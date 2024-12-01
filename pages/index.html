@@ -5,7 +5,7 @@
 const CLI = await new Aioli([{tool: "pyodide.asm",
    // version: "0.0.6",
    // program: "fastqe",         // Optional: sub-tool name; not needed for most tools (default: same as tool name)
-    urlPrefix: "http://115.146.93.115/core-build-Linux",  // Optional: custom path to .wasm assets (default: biowasm CDN)
+    urlPrefix: "https://raw.githubusercontent.com/lonsbio/workbench-template/main",  // Optional: custom path to .wasm assets (default: biowasm CDN)
  //   loading: "eager",         // Optional: if set to "lazy", only downloads WebAssembly modules when needed, not at initialization (default: eager)
  //   reinit: false,           // Optional: if set to true, will reinitialize module after each invocation; not needed for most tools
 }]);

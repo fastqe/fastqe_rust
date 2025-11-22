@@ -1,11 +1,12 @@
+
 <script  src="https://biowasm.com/cdn/v3/aioli.js"></script>
 <script type="module">
 
 
-const CLI = await new Aioli([{tool: "pyodide.asm",
+const CLI = await new Aioli([{tool: "fastqe",
    // version: "0.0.6",
    // program: "fastqe",         // Optional: sub-tool name; not needed for most tools (default: same as tool name)
-    urlPrefix: "https://raw.githubusercontent.com/lonsbio/workbench-template/main",  // Optional: custom path to .wasm assets (default: biowasm CDN)
+    urlPrefix: "https://fastqe.github.io/fastqe_rust/",  // Optional: custom path to .wasm assets (default: biowasm CDN)
  //   loading: "eager",         // Optional: if set to "lazy", only downloads WebAssembly modules when needed, not at initialization (default: eager)
  //   reinit: false,           // Optional: if set to true, will reinitialize module after each invocation; not needed for most tools
 }]);
